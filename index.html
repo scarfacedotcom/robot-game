@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot</title>
+  <style>
+    .head {
+      height: 50px;
+      width: 105px;
+      background-color: rgb(20, 228, 20);
+      border-radius: 105px 105px 0 0;
+      margin-left: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: -20px;
+    }
+
+    .eyes{
+      height: 9px;
+      width: 9px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .hand-1{
+      height: 55px;
+      width: 20px;
+      background-color: rgb(20, 228, 20);
+      border-radius: 105px 105px 105px 105px;
+      margin-left: 50px;
+      margin-right: 10px;
+    }
+
+    .body{
+      height: 100px;
+      width: 105px;
+      background-color: rgb(20, 228, 20);
+      border-radius: 0px 0px 15px 15px;
+      margin-left: 0px;
+      
+    }
+
+
+    .hand-2{
+      height: 55px;
+      width: 20px;
+      background-color: rgb(20, 228, 20);
+      border-radius: 105px 105px 105px 105px;
+      margin-left: 10px;
+    }
+
+    #main {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    #bottom {
+      display: flex;
+      margin-top: 10px;
+      margin-left: 95px;
+      margin-top: -1px;
+    }
+
+    .leg-1{
+      height: 50px;
+      width: 20px;
+      background-color: rgb(20, 228, 20);
+      border-radius: 0px 0px 105px 105px;
+      margin-left: 5px;
+    }
+
+    .leg-2{
+      height: 50px;
+      width: 20px;
+      background-color: rgb(20, 228, 20);
+      border-radius: 0px 0px 105px 105px;
+      margin-left: 20px;
+    }
+
+    #top {
+      display: flex;
+      /* margin-top: 10px; */
+      margin-left: 105px;
+      /* margin-top: -1px; */
+      align-items: center;
+    }
+
+    .Ant-1{
+      height: 50px;
+      width: 7px;
+      background-color: rgb(20, 228, 20);
+      border-radius: 105px 105px 105px 105px;
+      margin-left: 5px;
+      transform: rotate(-30deg);
+    }
+
+    .Ant-2{
+      height: 50px;
+      width: 7px;
+      background-color: rgb(20, 228, 20);
+      border-radius: 105px 105px  105px 105px;
+      margin-left: 35px;
+      transform: rotate(30deg);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="top">
+    <div class="Ant-1"></div>
+    <div class="Ant-2"></div>
+  </div>
+
+  <div class="head">
+    <div class="eyes"></div>
+    <div class="eyes"></div>
+  </div>
+
+  <div id="main">
+    <div class="hand-1"></div>
+    <div class="body"></div>
+    <div class="hand-2"></div>
+  </div>
+
+  <div id="bottom">
+    <div class="leg-1"></div>
+    <div class="leg-2"></div>
+  </div>
+
+  
+</body>
+</html>
