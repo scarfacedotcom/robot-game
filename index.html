@@ -40,7 +40,6 @@
       background-color: rgb(20, 228, 20);
       border-radius: 0px 0px 15px 15px;
       margin-left: 0px;
-      
     }
 
 
@@ -53,8 +52,13 @@
     }
 
     #main {
-      display: flex;
+      /* display: flex;
       margin-top: 10px;
+      justify-content: space-around;
+      align-items: center;
+      position: relative; */
+      display: inline-flex;
+      justify-content: space-around;
     }
 
     #bottom {
@@ -78,6 +82,10 @@
       background-color: rgb(20, 228, 20);
       border-radius: 0px 0px 105px 105px;
       margin-left: 20px;
+    }
+
+    .leg-2:hover{
+      transform: rotate(-40deg);
     }
 
     #top {
@@ -106,30 +114,76 @@
       transform: rotate(30deg);
     }
 
+    .ball{
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      background-color: rgb(20, 228, 20);
+      transition-duration: 0.1s;
+      margin-top: 10rem;
+      margin-left: -30px;
+    }
+
+    #main:hover .ball {
+      transform:translateX(100%)
+    }
+
+
   </style>
 </head>
 <body>
-
-  <div id="top">
-    <div class="Ant-1"></div>
-    <div class="Ant-2"></div>
-  </div>
-
-  <div class="head">
-    <div class="eyes"></div>
-    <div class="eyes"></div>
-  </div>
-
   <div id="main">
-    <div class="hand-1"></div>
-    <div class="body"></div>
-    <div class="hand-2"></div>
+
+    <div class="robot-1">
+      <div id="top">
+        <div class="Ant-1"></div>
+        <div class="Ant-2"></div>
+      </div>
+  
+      <div class="head">
+        <div class="eyes"></div>
+        <div class="eyes"></div>
+      </div>
+  
+      <div id="main">
+        <div class="hand-1"></div>
+        <div class="body"></div>
+        <div class="hand-2"></div>
+      </div>
+  
+      <div id="bottom">
+        <div class="leg-1"></div>
+        <div class="leg-2"></div>
+      </div>
+    </div>
+
+    <div class="ball"></div>
+
+    <div class="robot-2">
+      <div id="top">
+        <div class="Ant-1"></div>
+        <div class="Ant-2"></div>
+      </div>
+  
+      <div class="head">
+        <div class="eyes"></div>
+        <div class="eyes"></div>
+      </div>
+  
+      <div id="main">
+        <div class="hand-1"></div>
+        <div class="body"></div>
+        <div class="hand-2"></div>
+      </div>
+  
+      <div id="bottom">
+        <div class="leg-1"></div>
+        <div class="leg-2"></div>
+      </div>
+    </div>
   </div>
 
-  <div id="bottom">
-    <div class="leg-1"></div>
-    <div class="leg-2"></div>
-  </div>
+  
 
   
 </body>
